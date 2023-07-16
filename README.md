@@ -28,19 +28,19 @@
 
 ​    系统共分为五个模块，共分为主函数、控制论文的函数、控制项目的函数、控制课程的函数、实现查询统计的函数。
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![img](file:///01/clip_image002.jpg)
 
 ## 2.2 系统工作流程
 
 ​    系统首先使用主函数建立最开始的交互界面，然后通过点击主函数中的各个按键来调用不同的子函数，从而实现不同的功能
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg) 
+![img](file:///01/clip_image004.jpg) 
 
 ## 2.3 数据库设计
 
 ​    数据库的ER图于实验说明PDF上的基本保持一致
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+![img](file:///01/clip_image006.jpg)
 
 其中，发表论文的数据库采用工号和论文序号作为主键和外键且分别引用了论文的序号和教师的工号
 
@@ -56,11 +56,11 @@
 
 ​    该模块负责将所有的其他模块串联起来，此模块没有输入也没有输出，主要是负责提供主界面来进行后续操作：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+![img](file:///01/clip_image008.jpg)
 
 ​    流程图为：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg)
+![img](file:///01/clip_image010.jpg)
 
 ## 3.2 控制教师发表论文模块（paper.py）
 
@@ -76,7 +76,7 @@
 
 流程图如下：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg)
+![img](file:///01/clip_image012.jpg)
 
 ## 3.3  控制教师承担项目模块
 
@@ -92,7 +92,7 @@
 
 流程图如下：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+![img](file:///01/clip_image014.jpg)
 
 // 给出该模块的输入、输出和程序流程图。
 
@@ -110,7 +110,7 @@
 
 流程图如下：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg)
+![img](file:///01/clip_image016.jpg)
 
 ## 3.5  查询统计模块
 
@@ -120,7 +120,7 @@
 
 流程图如下：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg)
+![img](file:///01/clip_image018.jpg)
 
 # 4 实现与测试
 
@@ -128,27 +128,27 @@
 
 首先是初始界面：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg)
+![img](file:///01/clip_image020.jpg)
 
 添加界面（由于各个功能的增删改查界面几乎一致，这里只演示发表论文部分，下同）：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg)
+![img](file:///01/clip_image022.jpg)
 
 删除页面：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg)
+![img](file:///01/clip_image024.jpg)
 
 修改页面：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image026.jpg)
+![img](file:///01/clip_image026.jpg)
 
 查询页面：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image028.jpg)
+![img](file:///01/clip_image028.jpg)
 
 查询统计页面：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image030.jpg)
+![img](file:///01/clip_image030.jpg)
 
 ## 4.2 测试结果
 
@@ -156,57 +156,57 @@
 
 首先给10001的老师增添一条论文数据：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image032.jpg)
+![img](file:///01/clip_image032.jpg)
 
 再查询其所有论文，发现确实已经有了这条记录：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image034.jpg)
+![img](file:///01/clip_image034.jpg)
 
 试着更改一下论文2的名字然后删除论文1，再进行查询：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image036.jpg) ![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image038.jpg)
+![img](file:///01/clip_image036.jpg) ![img](file:///01/clip_image038.jpg)
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image040.jpg)
+![img](file:///01/clip_image040.jpg)
 
 为10001添加一个新的承担项目：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image042.jpg)
+![img](file:///01/clip_image042.jpg)
 
 查询其所有承担项目：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image044.jpg)
+![img](file:///01/clip_image044.jpg)
 
 修改10001在“TOUHOU”中承担的经费，然后删除PROJECT-X项目，再查找TOUHOU：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image046.jpg) ![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image048.jpg)
+![img](file:///01/clip_image046.jpg) ![img](file:///01/clip_image048.jpg)
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image050.jpg)
+![img](file:///01/clip_image050.jpg)
 
 为10001在添加一个新课：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image052.jpg)
+![img](file:///01/clip_image052.jpg)
 
 查询其所有授课记录：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image054.jpg)
+![img](file:///01/clip_image054.jpg)
 
 删除刚才添加的课程，然后将10001在数学分析1的承担学时改为2，然后查询数学分析1：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image056.jpg) ![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image058.jpg)
+![img](file:///01/clip_image056.jpg) ![img](file:///01/clip_image058.jpg)
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image060.jpg)
+![img](file:///01/clip_image060.jpg)
 
 最最后，我们对10001的1998年~2023年的所有成就查询一下，并设置输出pdf画框宽度为2000，高度仍为默认：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image062.jpg)
+![img](file:///01/clip_image062.jpg)
 
 输出的可视查询窗口：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image064.jpg)
+![img](file:///01/clip_image064.jpg)
 
 输出的pdf：
 
-![img](file:///C:/Users/Hashifu/AppData/Local/Temp/msohtmlclip1/01/clip_image066.jpg)
+![img](file:///01/clip_image066.jpg)
 
 综上所述，都很好的满足了实验的要求。
 
